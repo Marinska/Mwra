@@ -166,10 +166,11 @@ void Fd(){
 void Edit(){
 	if(IsEmpty()==0)
 	{
+		printf("Berikut data antrian yang tersedia =>");
 		int index, edit;
 		for(int i=antrian.head;i<=antrian.tail;i++)
         {
-            printf("Berikut antrian yang tersedia %d",antrian.data[i]);
+            printf(" %d",antrian.data[i]);
         }
         printf("\nPada index ke berapa data yang ingin anda ubah : ");
         scanf("%d", &index);
